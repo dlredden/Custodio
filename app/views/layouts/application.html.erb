@@ -2,13 +2,15 @@
 <html>
 <head>
   <title>Custodio</title>
-  <link href="//netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/css/bootstrap<%= do_not_minify_development %>.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 	<%= yield %>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/js/bootstrap.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/js/bootstrap<%= do_not_minify_development %>.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/<%= angular_version %>/angular<%= do_not_minify_development %>.js"></script>-->
 </body>
 </html>

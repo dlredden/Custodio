@@ -1,4 +1,7 @@
 class Company < ActiveRecord::Base
+	has_many :diagrams
+	has_many :servers
+
 	before_create :set_date
 	
 	private

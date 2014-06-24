@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custodio - Modeler</title>
+		<link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+		<link href="https://netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/css/bootstrap<%= do_not_minify_development %>.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link href="//ajax.googleapis.com/ajax/libs/jqueryui/<%= jqueryui_version %>/themes/smoothness/jquery-ui<%= do_not_minify_development %>.css" rel="stylesheet" /> -->
+		<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+	</head>
+
+	<body ng-app="modelerApp" class="ng-cloak">
+		<div id="wrap">
+			<div id="header">
+				<div class="container">
+					<h1 style="font-family: 'Mr Dafoe', cursive; font-size: 3.5em;">
+						Custodio <span style="font-family: Veranda; font-size: .7em;">Modeler</span>
+					</h1>
+				</div>
+			</div>
+
+			<div class="container-fluid modeler-canvas"
+				ng-controller="modelerController"
+				ng-model="tables"
+				data-drop="true"
+				jqyoui-droppable="{multiple: true, onDrop: 'dropCallback', onOver: 'overCallback', onOut: 'outCallback'}"
+				data-jqyoui-options="{hoverClass: 'hoverClass'}">
+				<%= yield %>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="container">
+				&#0169; 2014 Wikid Labs, LLC
+			</div>
+		</div>
+
+		<!-- Load JavaScript files last -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/<%= jquery_version %>/jquery<%= do_not_minify_development %>.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/<%= jqueryui_version %>/jquery-ui<%= do_not_minify_development %>.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/js/bootstrap<%= do_not_minify_development %>.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/<%= angular_version %>/angular<%= do_not_minify_development %>.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/<%= underscore_version %>/underscore<%= do_not_minify_development("-") %>.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/restangular/<%= restangular_version %>/restangular<%= do_not_minify_development %>.js"></script>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	</body>
+</html>

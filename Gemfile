@@ -46,3 +46,6 @@ gem 'capistrano', group: :development
 
 # Use debugger
 gem 'debugger', group: [:development, :test]
+
+# Use Miniprofiler
+gem 'rack-mini-profiler', require: false

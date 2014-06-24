@@ -1,0 +1,12 @@
+<!-- app/views/modeler/index.html.erb -->
+<div class="panel panel-default modeler-table"
+	ng-repeat="table in tables"
+	ng-model="table"
+	data-drag="true"
+	jqyoui-draggable="{animate: true, placeholder: 'keep',
+		onStart: 'startCallback', onStop: 'stopCallback', onDrag: 'dragCallback'}"
+	data-jqyoui-options="{snap: true, cursor: 'move', revert: 'invalid', helper: 'clone'}">
+	<div ng-style="top: table.top; left: table.left;">
+		<%= render :partial => "table", locals: {table: "{{ table }}"} %>
+	</div>
+</div>

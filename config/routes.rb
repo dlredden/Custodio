@@ -3,19 +3,20 @@ Custodio::Application.routes.draw do
 	# See how all your routes lay out with "rake routes".
 	
 	# You can have the root of your site routed with "root"
-	root 'home#index' 
+	root 'home#index'
 
-	constraints subdomain: 'api' do
-		scope module: 'api' do
-			namespace :v1 do
-        resources :servers
-        resources :diagrams
-        resources :environments
-        resources :companies
-        resources :users
-			end
-		end
-  end
+  resources :modeler
+
+  namespace :api do
+    namespace :v1 do
+      resources :companies
+      resources :diagrams
+      #resources :environments
+      resources :servers
+      resources :tables
+      #resources :users
+    end
+	end
   
 	# Example of regular route:
 	#   get 'products/:id' => 'catalog#view'

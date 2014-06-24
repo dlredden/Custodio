@@ -1,0 +1,72 @@
+// Place all the styles related to the modeler controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Colors from https://kuler.adobe.com/Masculine-color-theme-2311109/
+$background-color: #C2CFDD; //Light Gray
+$footer-color: #443927; //Brown
+$header-color: #2E3944; //Dark Blue
+$alt-color1: #708090; //Gray
+$alt-color2: #908470; //Tan
+
+$footer-height: 40px;
+$header-height: 70px;
+$font-family: Veranda;
+$text-color: DarkGray;
+$text-color-light: #FFFFFF;
+
+html,
+body {
+  height: 100%;
+  background-color: $background-color;
+  font-family: $font-family;
+  color: $text-color;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+#header {
+	background-color: $header-color;
+	min-height: $header-height;
+	color: $text-color-light;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto (-1 * $footer-height);
+  /* Pad bottom by footer height */
+  padding: 0 0 $footer-height;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: $footer-height;
+  background-color: $footer-color;
+  color: $text-color-light;
+}
+
+.modeler-canvas {
+	min-height: 500px;
+	border: solid;
+	border-width: 2px;
+}
+
+.modeler-table {
+	position: fixed;
+    display: inline-block;
+    text-align: center;
+    padding: 2px;
+    margin: 5px;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    cursor: pointer;
+    border:solid 1px #000000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}

@@ -11,14 +11,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140529154512) do
+ActiveRecord::Schema.define(version: 20140622141554) do
 
-  create_table "tables", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-  
   create_table "columns", force: true do |t|
     t.integer  "table_id"
     t.string   "name"
@@ -46,6 +40,7 @@ ActiveRecord::Schema.define(version: 20140529154512) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "company_id"
   end
 
   create_table "diagrams_tables", id: false, force: true do |t|
@@ -53,21 +48,12 @@ ActiveRecord::Schema.define(version: 20140529154512) do
     t.integer  "table_id",   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "top"
+    t.integer  "left"
   end
 
   add_index "diagrams_tables", ["diagram_id"], name: "index_diagrams_tables_on_diagram_id", using: :btree
   add_index "diagrams_tables", ["table_id"], name: "index_diagrams_tables_on_table_id", using: :btree
-
-  create_table "relationships", force: true do |t|
-    t.string   "name"
-    t.integer  "parent_table_id"
-    t.integer  "child_table_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "relationships", ["child_table_id"], name: "index_relationships_on_child_table_id", using: :btree
-  add_index "relationships", ["parent_table_id"], name: "index_relationships_on_parent_table_id", using: :btree
 
   create_table "relationship_columns", force: true do |t|
     t.integer  "parent_column_id"
@@ -82,6 +68,17 @@ ActiveRecord::Schema.define(version: 20140529154512) do
   add_index "relationship_columns", ["parent_column_id"], name: "fk_relationship_columns_parent_column", using: :btree
   add_index "relationship_columns", ["relationship_id"], name: "fk_relationship_columns_relationships", using: :btree
 
+  create_table "relationships", force: true do |t|
+    t.string   "name"
+    t.integer  "parent_table_id"
+    t.integer  "child_table_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "relationships", ["child_table_id"], name: "index_relationships_on_child_table_id", using: :btree
+  add_index "relationships", ["parent_table_id"], name: "index_relationships_on_parent_table_id", using: :btree
+
   create_table "servers", force: true do |t|
     t.string   "name"
     t.string   "machine_name"
@@ -90,5 +87,13 @@ ActiveRecord::Schema.define(version: 20140529154512) do
     t.boolean  "is_active",    default: true
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "company_id"
   end
+
+  create_table "tables", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end
