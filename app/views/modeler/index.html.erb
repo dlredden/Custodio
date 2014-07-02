@@ -1,12 +1,28 @@
 <!-- app/views/modeler/index.html.erb -->
-<div class="panel panel-default modeler-table"
-	ng-repeat="table in tables"
-	ng-model="table"
-	data-drag="true"
-	jqyoui-draggable="{animate: true, placeholder: 'keep',
-		onStart: 'startCallback', onStop: 'stopCallback', onDrag: 'dragCallback'}"
-	data-jqyoui-options="{snap: true, cursor: 'move', revert: 'invalid', helper: 'clone'}">
-	<div ng-style="top: table.top; left: table.left;">
-		<%= render :partial => "table", locals: {table: "{{ table }}"} %>
+<ul class="nav nav-tabs">
+	<li ng-class="{active: diagram.active}" ng-repeat="diagram in diagrams">
+		<a href="#{{contentBaseId}}-{{$index}}" ng-click="changeActiveDiagram($index)">{{ diagram.name }}</a>
+	</li>
+</ul>
+
+<div class="tab-content">
+	<div class="tab-pane"
+		ng-class="{active: diagram.active}"
+		id="diagram-{{$index}}"
+		ng-repeat="diagram in diagrams"
+		style="height: 500px; width: 800px;"
+		data-drop="true"
+		jqyoui-droppable="{multiple: true, onDrop: 'dropCallback', onOver: 'overCallback', onOut: 'outCallback'}"
+		data-jqyoui-options="{hoverClass: 'hoverClass'}">
+		<div
+			ng-repeat="table in diagram.tables" ng-model="table"
+			ng-style="{'top':table.diagram_settings.top_position+'px', 'left':table.diagram_settings.left_position+'px'}"
+			class="panel panel-default modeler-table"
+			ng-model="table"
+			data-drag="true" jqyoui-draggable="{animate: true, onStart: 'startCallback', onStop: 'stopCallback', onDrag: 'dragCallback'}"
+			data-jqyoui-options="{snap: true, cursor: 'move', revert: 'invalid'}">
+			<%= render :partial => "table", locals: {table: "{{ table }}"} %>
+		</div>
 	</div>
 </div>
+

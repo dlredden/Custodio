@@ -26,8 +26,8 @@ RelationshipColumn.create(relationship_id: @fk1.id, ordinal_position: 0, parent_
 @diagram1 = Diagram.create(name: "Default", company_id: @companyA.id)
 
 # Assign products and categories to the Default diagram
-DiagramsTable.create(diagram_id: @diagram1.id, table_id: @tab1.id, top: 100, left: 5)
-DiagramsTable.create(diagram_id: @diagram1.id, table_id: @tab2.id, top: 100, left: 105)
+DiagramTable.create(diagram_id: @diagram1.id, table_id: @tab1.id, top_position: 100, left_position: 5)
+DiagramTable.create(diagram_id: @diagram1.id, table_id: @tab2.id, top_position: 100, left_position: 105)
 
 # Create an inactive company ToDo: Add assets to this company
 @companyB = Company.create(name: "NoMoMe", join_date: "5/1/2014", is_active: false)

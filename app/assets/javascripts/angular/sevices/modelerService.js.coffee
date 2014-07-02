@@ -5,6 +5,9 @@
 		constructor: ->
 			@restAngular = Restangular.withConfig((Configurer) -> Configurer.setBaseUrl('/api/v1'))
 
-		getTables: ($scope) ->
-			@restAngular.all('tables').getList().then((results) -> $scope.tables = results)
+		getTables: () ->
+			@restAngular.all('tables').getList()
+
+		getDiagrams: () ->
+			@restAngular.all('diagrams').getList()
 ]

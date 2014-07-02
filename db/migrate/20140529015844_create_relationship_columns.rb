@@ -17,7 +17,7 @@ class CreateRelationshipColumns < ActiveRecord::Migration
             FOREIGN KEY (relationship_id) REFERENCES relationships(id)
         SQL
         execute <<-SQL
-          ALTER TABLE relationship_scolumns ADD
+          ALTER TABLE relationship_columns ADD
             CONSTRAINT fk_relationship_columns_child_column
             FOREIGN KEY (child_column_id) REFERENCES columns(id)
         SQL

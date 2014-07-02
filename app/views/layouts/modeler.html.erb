@@ -20,12 +20,7 @@
 				</div>
 			</div>
 
-			<div class="container-fluid modeler-canvas"
-				ng-controller="modelerController"
-				ng-model="tables"
-				data-drop="true"
-				jqyoui-droppable="{multiple: true, onDrop: 'dropCallback', onOver: 'overCallback', onOut: 'outCallback'}"
-				data-jqyoui-options="{hoverClass: 'hoverClass'}">
+			<div class="container modeler-canvas" ng-controller="modelerController">
 				<%= yield %>
 			</div>
 		</div>

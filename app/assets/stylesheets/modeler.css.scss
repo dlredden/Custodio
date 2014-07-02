@@ -52,20 +52,21 @@ body {
 	min-height: 500px;
 	border: solid;
 	border-width: 2px;
+  position: relative;
 }
 
 .modeler-table {
-	position: fixed;
-    display: inline-block;
-    text-align: center;
-    padding: 2px;
-    margin: 5px;
-    transition: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    cursor: pointer;
-    border:solid 1px #000000;
+	position: absolute;
+  display: inline-block;
+  text-align: center;
+  padding: 2px;
+  margin: 5px;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  cursor: pointer;
+  border:solid 1px #000000;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;

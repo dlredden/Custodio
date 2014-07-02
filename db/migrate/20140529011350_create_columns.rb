@@ -2,7 +2,7 @@ class CreateColumns < ActiveRecord::Migration
   def change
     create_table :columns do |t|
       t.references :table, index: true
-      t.string :name. null: false
+      t.string :name, null: false
       t.integer :ordinal_position, null: false
       t.string :default_value, null: true
       t.string :data_type, null: false

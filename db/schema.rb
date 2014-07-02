@@ -15,13 +15,13 @@ ActiveRecord::Schema.define(version: 20140622141554) do
 
   create_table "columns", force: true do |t|
     t.integer  "table_id"
-    t.string   "name"
-    t.integer  "ordinal_position"
+    t.string   "name",                              null: false
+    t.integer  "ordinal_position",                  null: false
     t.string   "default_value"
-    t.string   "data_type"
-    t.boolean  "is_nullable"
-    t.boolean  "is_primary_key"
-    t.boolean  "is_auto_increment"
+    t.string   "data_type",                         null: false
+    t.boolean  "is_nullable",       default: true
+    t.boolean  "is_primary_key",    default: false
+    t.boolean  "is_auto_increment", default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,30 +36,30 @@ ActiveRecord::Schema.define(version: 20140622141554) do
     t.datetime "updated_at"
   end
 
+  create_table "diagram_tables", force: true do |t|
+    t.integer  "diagram_id"
+    t.integer  "table_id"
+    t.integer  "top_position"
+    t.integer  "left_position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "diagram_tables", ["diagram_id"], name: "fk_diagram_tables_diagram", using: :btree
+  add_index "diagram_tables", ["table_id"], name: "fk_diagram_tables_table", using: :btree
+
   create_table "diagrams", force: true do |t|
-    t.string   "name"
+    t.string   "name",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "company_id"
   end
 
-  create_table "diagrams_tables", id: false, force: true do |t|
-    t.integer  "diagram_id", null: false
-    t.integer  "table_id",   null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "top"
-    t.integer  "left"
-  end
-
-  add_index "diagrams_tables", ["diagram_id"], name: "index_diagrams_tables_on_diagram_id", using: :btree
-  add_index "diagrams_tables", ["table_id"], name: "index_diagrams_tables_on_table_id", using: :btree
-
   create_table "relationship_columns", force: true do |t|
     t.integer  "parent_column_id"
     t.integer  "child_column_id"
     t.integer  "relationship_id"
-    t.integer  "ordinal_position"
+    t.integer  "ordinal_position", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 20140622141554) do
   add_index "relationship_columns", ["relationship_id"], name: "fk_relationship_columns_relationships", using: :btree
 
   create_table "relationships", force: true do |t|
-    t.string   "name"
+    t.string   "name",            null: false
     t.integer  "parent_table_id"
     t.integer  "child_table_id"
     t.datetime "created_at"
@@ -80,7 +80,7 @@ ActiveRecord::Schema.define(version: 20140622141554) do
   add_index "relationships", ["parent_table_id"], name: "index_relationships_on_parent_table_id", using: :btree
 
   create_table "servers", force: true do |t|
-    t.string   "name"
+    t.string   "name",                        null: false
     t.string   "machine_name"
     t.string   "network_name"
     t.string   "ip_address"
@@ -91,7 +91,7 @@ ActiveRecord::Schema.define(version: 20140622141554) do
   end
 
   create_table "tables", force: true do |t|
-    t.string   "name"
+    t.string   "name",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
