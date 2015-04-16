@@ -18,7 +18,17 @@ module LayoutHelper
 	   # Choose the AngularJS version you would like to use from the CDN
 	   "1.3.15"
 	end
+    
+    def backbone_version
+	   # Choose the Backbone.JS version you would like to use from the CDN
+	   "1.1.2"
+	end
 
+    def loadash_version
+	   # Choose the Backbone.JS version you would like to use from the CDN
+	   "3.6.0"
+	end
+    
 	def restangular_version
 	   # Choose the Restangular version you would like to use from the CDN
 	   "1.5.1"

@@ -44992,3 +44992,1286 @@ Completed 200 OK in 274ms (Views: 0.3ms | ActiveRecord: 77.1ms)
   [1m[35mDiagramTable Load (2.5ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1
   [1m[36mDiagramTable Load (1.9ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1[0m
 Completed 200 OK in 769ms (Views: 1.0ms | ActiveRecord: 173.6ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 22:28:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (50.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (1.4ms)
+  Rendered modeler/index.html.erb within layouts/modeler (11.6ms)
+Completed 200 OK in 3552ms (Views: 3533.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 22:28:21 -0500
+
+
+Started GET "/assets/joint/Gruntfile.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:21 -0500
+
+
+Started GET "/assets/joint/demo/gradients.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:21 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 22:28:21 -0500
+
+
+Started GET "/assets/joint/demo/interpreter.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:22 -0500
+
+
+Started GET "/assets/joint/demo/links.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:22 -0500
+
+
+Started GET "/assets/joint/demo/transition.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:22 -0500
+
+
+Started GET "/assets/joint/dist/joint.all.clean.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:22 -0500
+
+
+Started GET "/assets/joint/dist/joint.all.clean.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:22 -0500
+
+
+Started GET "/assets/joint/dist/joint.all.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:22 -0500
+
+
+Started GET "/assets/joint/dist/joint.all.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:23 -0500
+
+
+Started GET "/assets/joint/dist/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:23 -0500
+
+
+Started GET "/assets/joint/dist/joint.clean.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:23 -0500
+
+
+Started GET "/assets/joint/dist/joint.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/joint/dist/joint.layout.DirectedGraph.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:24 -0500
+
+
+Started GET "/assets/joint/dist/joint.layout.DirectedGraph.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.nobackbone.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.nobackbone.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.nojquery.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.nojquery.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.nojquerynobackbone.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.nojquerynobackbone.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.chess.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.chess.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.devs.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.devs.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.fsa.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.fsa.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:25 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 22:28:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/joint/demo/basic.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:29 -0500
+
+
+Started GET "/assets/joint/demo/filters.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:29 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.logic.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/demo/links-sticky-points.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.logic.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.org.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.pn.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.org.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.pn.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/lib/backbone.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/lib/lodash.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/index.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/lib/jquery.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/plugins/connectors/joint.connectors.rounded.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:30 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.basic.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:31 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.devs.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:31 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.fsa.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:31 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.logic.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/connectors/joint.connectors.normal.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/connectors/joint.connectors.smooth.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.chess.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.org.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/joint.shapes.pn.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/layout/DirectedGraph/lib/dagre.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/layout/DirectedGraph/joint.layout.DirectedGraph.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/routers/joint.routers.manhattan.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/routers/joint.routers.metro.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/shapes.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/src/geometry.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/src/joint.dia.element.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/src/joint.dia.link.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/plugins/routers/joint.routers.orthogonal.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/src/joint.dia.paper.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/test/jointjs-nodejs/index.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/src/core.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/test/jointjs/basic.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/src/joint.dia.cell.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/test/jointjs/core.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+
+
+Started GET "/assets/joint/test/jointjs/embedding.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+Started GET "/assets/joint/src/joint.dia.graph.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/src/vectorizer.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/test/jointjs/paper.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/test/jointjs/connectors.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:32 -0500
+
+
+Started GET "/assets/joint/test/utils.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:33 -0500
+
+
+Started GET "/assets/joint/test/jointjs/links.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:33 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:33 -0500
+
+
+Started GET "/assets/joint/demo/filters.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:33 -0500
+
+
+Started GET "/assets/joint/test/jointjs/routers.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:33 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:33 -0500
+
+
+Started GET "/assets/joint/dist/joint.nojquerynobackbone.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:35 -0500
+
+
+Started GET "/assets/joint/dist/joint.nojquerynobackbone.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:35 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.chess.min.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:35 -0500
+
+
+Started GET "/assets/joint/dist/joint.shapes.fsa.js?body=1" for 127.0.0.1 at 2015-04-15 22:28:36 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 22:28:37 -0500
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 22:28:37 -0500
+Processing by Api::V1::TablesController#index as HTML
+Processing by Api::V1::DiagramsController#index as HTML
+  [1m[35mTable Load (183.7ms)[0m  SELECT `tables`.* FROM `tables`
+  [1m[35mCompany Load (167.2ms)[0m  SELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1
+  [1m[36mColumn Load (106.9ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+  [1m[36mDiagram Load (6.9ms)[0m  [1mSELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1[0m
+Completed 200 OK in 1699ms (Views: 1.4ms | ActiveRecord: 471.6ms)
+  [1m[35mDiagramTable Load (3.8ms)[0m  SELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)
+  [1m[36mTable Load (3.3ms)[0m  [1mSELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)[0m
+  [1m[35mColumn Load (2.1ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mRelationship Load (13.6ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (90.5ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)
+  [1m[36mDiagramTable Load (8.9ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1[0m
+  [1m[35mDiagramTable Load (3.0ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1
+Completed 200 OK in 1949ms (Views: 1.4ms | ActiveRecord: 475.1ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:00:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (41.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (1.1ms)
+  Rendered modeler/index.html.erb within layouts/modeler (12.6ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/DL/Custodio/app/views/layouts/modeler.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+		<script src="https://cdnjs.cloudflare.com/ajax/...
+		                  ^
+/Users/DL/Custodio/app/views/layouts/modeler.html.erb:39: unknown regexp options - cdj
+/Users/DL/Custodio/app/views/layouts/modeler.html.erb:39: syntax error, unexpected '<'
+...e.com/ajax/libs/underscore.js/<%= underscore_version );@outp...
+...                               ^
+/Users/DL/Custodio/app/views/layouts/modeler.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/DL/Custodio/app/views/layouts/modeler.html.erb:47: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/modeler.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/modeler.html.erb:39: unknown regexp options - cdj
+  app/views/layouts/modeler.html.erb:39: syntax error, unexpected '<'
+  app/views/layouts/modeler.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/modeler.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/DL/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /Users/DL/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/DL/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/DL/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (213.0ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:02:11 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.6ms)
+  Rendered modeler/index.html.erb within layouts/modeler (5.3ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/DL/Custodio/app/views/layouts/modeler.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+		<script src="https://cdnjs.cloudflare.com/ajax/...
+		                  ^
+/Users/DL/Custodio/app/views/layouts/modeler.html.erb:39: unknown regexp options - cdj
+/Users/DL/Custodio/app/views/layouts/modeler.html.erb:39: syntax error, unexpected '<'
+...e.com/ajax/libs/underscore.js/<%= underscore_version );@outp...
+...                               ^
+/Users/DL/Custodio/app/views/layouts/modeler.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/DL/Custodio/app/views/layouts/modeler.html.erb:47: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/modeler.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/modeler.html.erb:39: unknown regexp options - cdj
+  app/views/layouts/modeler.html.erb:39: syntax error, unexpected '<'
+  app/views/layouts/modeler.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/modeler.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/DL/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.2ms)
+  Rendered /Users/DL/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /Users/DL/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/DL/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (134.6ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:02:52 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.8ms)
+  Rendered modeler/index.html.erb within layouts/modeler (10.4ms)
+Completed 200 OK in 987ms (Views: 979.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:02:54 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:02:54 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:55 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:56 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:02:56 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:03:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (13.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:03:01 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:01 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:01 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:01 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:03:03 -0500
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:03:03 -0500
+Processing by Api::V1::TablesController#index as HTML
+  [1m[35mTable Load (19.1ms)[0m  SELECT `tables`.* FROM `tables`
+Processing by Api::V1::DiagramsController#index as HTML
+  [1m[36mColumn Load (35.1ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+Completed 200 OK in 1590ms (Views: 0.4ms | ActiveRecord: 181.7ms)
+  [1m[35mCompany Load (2.6ms)[0m  SELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1
+  [1m[36mDiagram Load (5.5ms)[0m  [1mSELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1[0m
+  [1m[35mDiagramTable Load (5.8ms)[0m  SELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)
+  [1m[36mTable Load (3.4ms)[0m  [1mSELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)[0m
+  [1m[35mColumn Load (3.3ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mRelationship Load (6.3ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (3.4ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)
+  [1m[36mDiagramTable Load (4.5ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1[0m
+  [1m[35mDiagramTable Load (2.8ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1
+Completed 200 OK in 1891ms (Views: 0.7ms | ActiveRecord: 677.1ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:03:23 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (1.1ms)
+  Rendered modeler/index.html.erb within layouts/modeler (40.5ms)
+Completed 200 OK in 425ms (Views: 417.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:03:25 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:03:26 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:03:27 -0500
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:03:27 -0500
+Processing by Api::V1::TablesController#index as HTML
+  [1m[35mTable Load (4.7ms)[0m  SELECT `tables`.* FROM `tables`
+  [1m[36mColumn Load (4.4ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+Processing by Api::V1::DiagramsController#index as HTML
+Completed 200 OK in 42ms (Views: 0.4ms | ActiveRecord: 9.1ms)
+  [1m[36mCompany Load (13.1ms)[0m  [1mSELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1[0m
+  [1m[35mDiagram Load (30.5ms)[0m  SELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1
+  [1m[36mDiagramTable Load (7.1ms)[0m  [1mSELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)[0m
+  [1m[35mTable Load (155.9ms)[0m  SELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)
+  [1m[36mColumn Load (814.0ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (3.6ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)
+  [1m[36mRelationship Load (4.2ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)[0m
+  [1m[35mDiagramTable Load (3.0ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1
+  [1m[36mDiagramTable Load (2.8ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1[0m
+Completed 200 OK in 1724ms (Views: 1.2ms | ActiveRecord: 1034.2ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:05:34 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (1.0ms)
+  Rendered modeler/index.html.erb within layouts/modeler (4.9ms)
+Completed 200 OK in 98ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:36 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:37 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:37 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:37 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:37 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:37 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:05:37 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:05:38 -0500
+Processing by Api::V1::TablesController#index as HTML
+  [1m[35mTable Load (4.1ms)[0m  SELECT `tables`.* FROM `tables`
+  [1m[36mColumn Load (4.2ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:05:38 -0500
+Processing by Api::V1::DiagramsController#index as HTML
+Completed 200 OK in 82ms (Views: 0.3ms | ActiveRecord: 8.3ms)
+  [1m[35mCompany Load (22.5ms)[0m  SELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1
+  [1m[36mDiagram Load (2.3ms)[0m  [1mSELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1[0m
+  [1m[35mDiagramTable Load (3.3ms)[0m  SELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)
+  [1m[36mTable Load (4.6ms)[0m  [1mSELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)[0m
+  [1m[35mColumn Load (2.7ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mRelationship Load (3.2ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (17.8ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)
+  [1m[36mDiagramTable Load (2.6ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1[0m
+  [1m[35mDiagramTable Load (15.6ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1
+Completed 200 OK in 324ms (Views: 0.7ms | ActiveRecord: 74.7ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:09:19 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.8ms)
+  Rendered modeler/index.html.erb within layouts/modeler (5.5ms)
+Completed 200 OK in 57ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:20 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:21 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:21 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:09:21 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:09:21 -0500
+Processing by Api::V1::TablesController#index as HTML
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:09:21 -0500
+Processing by Api::V1::DiagramsController#index as HTML
+  [1m[35mTable Load (194.8ms)[0m  SELECT `tables`.* FROM `tables`
+  [1m[36mCompany Load (25.8ms)[0m  [1mSELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1[0m
+  [1m[36mColumn Load (4.4ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+Completed 200 OK in 388ms (Views: 0.2ms | ActiveRecord: 199.2ms)
+  [1m[35mDiagram Load (3.1ms)[0m  SELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1
+  [1m[36mDiagramTable Load (9.5ms)[0m  [1mSELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)[0m
+  [1m[35mTable Load (3.7ms)[0m  SELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)
+  [1m[36mColumn Load (12.6ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (3.0ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)
+  [1m[36mRelationship Load (2.7ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)[0m
+  [1m[35mDiagramTable Load (3.8ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1
+  [1m[36mDiagramTable Load (2.6ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1[0m
+Completed 200 OK in 897ms (Views: 1.0ms | ActiveRecord: 66.8ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:12:17 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.5ms)
+  Rendered modeler/index.html.erb within layouts/modeler (5.2ms)
+Completed 200 OK in 47ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:12:19 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:20 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:12:20 -0500
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:12:20 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:12:20 -0500
+Processing by Api::V1::DiagramsController#index as HTML
+Processing by Api::V1::TablesController#index as HTML
+  [1m[35mTable Load (224.6ms)[0m  SELECT `tables`.* FROM `tables`
+  [1m[35mCompany Load (175.7ms)[0m  SELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1
+  [1m[36mDiagram Load (3.8ms)[0m  [1mSELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1[0m
+  [1m[36mColumn Load (50.1ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+Completed 200 OK in 724ms (Views: 0.4ms | ActiveRecord: 348.9ms)
+  [1m[35mDiagramTable Load (2.6ms)[0m  SELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)
+  [1m[36mTable Load (13.5ms)[0m  [1mSELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)[0m
+  [1m[35mColumn Load (1.7ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mRelationship Load (1.7ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (2.1ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)
+  [1m[36mDiagramTable Load (5.6ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1[0m
+  [1m[35mDiagramTable Load (1.5ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1
+Completed 200 OK in 1078ms (Views: 0.2ms | ActiveRecord: 572.9ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:16:11 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.7ms)
+  Rendered modeler/index.html.erb within layouts/modeler (5.6ms)
+Completed 200 OK in 99ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:16:12 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:16:12 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:13 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:16:14 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:16:14 -0500
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:16:14 -0500
+Processing by Api::V1::TablesController#index as HTML
+  [1m[36mTable Load (89.0ms)[0m  [1mSELECT `tables`.* FROM `tables`[0m
+  [1m[35mColumn Load (57.8ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+Processing by Api::V1::DiagramsController#index as HTML
+Completed 200 OK in 269ms (Views: 0.5ms | ActiveRecord: 146.7ms)
+  [1m[35mCompany Load (31.3ms)[0m  SELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1
+  [1m[36mDiagram Load (2.4ms)[0m  [1mSELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1[0m
+  [1m[35mDiagramTable Load (20.2ms)[0m  SELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)
+  [1m[36mTable Load (2.7ms)[0m  [1mSELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)[0m
+  [1m[35mColumn Load (2.6ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mRelationship Load (3.1ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (2.5ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)
+  [1m[36mDiagramTable Load (2.3ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1[0m
+  [1m[35mDiagramTable Load (2.1ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1
+Completed 200 OK in 1174ms (Views: 0.7ms | ActiveRecord: 334.0ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:17:26 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.9ms)
+  Rendered modeler/index.html.erb within layouts/modeler (6.3ms)
+Completed 200 OK in 92ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:27 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:28 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:28 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:28 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:28 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:28 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:17:28 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:17:29 -0500
+Processing by Api::V1::TablesController#index as HTML
+  [1m[36mTable Load (4.9ms)[0m  [1mSELECT `tables`.* FROM `tables`[0m
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:17:29 -0500
+Processing by Api::V1::DiagramsController#index as HTML
+  [1m[36mCompany Load (3.2ms)[0m  [1mSELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1[0m
+  [1m[35mDiagram Load (4.8ms)[0m  SELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1
+  [1m[36mDiagramTable Load (4.6ms)[0m  [1mSELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)[0m
+  [1m[35mColumn Load (3.2ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[35mTable Load (2.8ms)[0m  SELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)
+  [1m[36mColumn Load (2.6ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (2.8ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)
+  [1m[36mRelationship Load (2.7ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)[0m
+  [1m[35mDiagramTable Load (2.9ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1
+  [1m[36mDiagramTable Load (2.3ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1[0m
+Completed 200 OK in 135ms (Views: 13.4ms | ActiveRecord: 8.1ms)
+Completed 200 OK in 91ms (Views: 0.5ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:23:17 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.7ms)
+  Rendered modeler/index.html.erb within layouts/modeler (4.5ms)
+Completed 200 OK in 88ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:18 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:23:19 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:23:19 -0500
+Processing by Api::V1::TablesController#index as HTML
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:23:19 -0500
+Processing by Api::V1::DiagramsController#index as HTML
+  [1m[36mTable Load (82.6ms)[0m  [1mSELECT `tables`.* FROM `tables`[0m
+  [1m[35mCompany Load (44.6ms)[0m  SELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1
+  [1m[35mColumn Load (14.9ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mDiagram Load (3.1ms)[0m  [1mSELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1[0m
+Completed 200 OK in 160ms (Views: 0.3ms | ActiveRecord: 97.4ms)
+  [1m[35mDiagramTable Load (16.2ms)[0m  SELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)
+  [1m[36mTable Load (4.6ms)[0m  [1mSELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)[0m
+  [1m[35mColumn Load (8.6ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mRelationship Load (61.5ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (5.5ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)
+  [1m[36mDiagramTable Load (5.4ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1[0m
+  [1m[35mDiagramTable Load (55.7ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1
+Completed 200 OK in 1023ms (Views: 0.4ms | ActiveRecord: 205.3ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:25:28 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.3ms)
+  Rendered modeler/index.html.erb within layouts/modeler (3.9ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+Started GET "/assets/joint.min.css?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:29 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.min.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:25:30 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:25:31 -0500
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:25:31 -0500
+Processing by Api::V1::TablesController#index as HTML
+Processing by Api::V1::DiagramsController#index as HTML
+  [1m[36mTable Load (585.7ms)[0m  [1mSELECT `tables`.* FROM `tables`[0m
+  [1m[36mCompany Load (8.2ms)[0m  [1mSELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1[0m
+  [1m[35mDiagram Load (2.8ms)[0m  SELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1
+  [1m[35mColumn Load (62.2ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mDiagramTable Load (4.0ms)[0m  [1mSELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)[0m
+  [1m[35mTable Load (2.9ms)[0m  SELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)
+Completed 200 OK in 974ms (Views: 0.5ms | ActiveRecord: 686.8ms)
+  [1m[36mColumn Load (3.7ms)[0m  [1mSELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (3.2ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)
+  [1m[36mRelationship Load (59.0ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)[0m
+  [1m[35mDiagramTable Load (17.7ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1
+  [1m[36mDiagramTable Load (2.4ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1[0m
+Completed 200 OK in 1374ms (Views: 0.7ms | ActiveRecord: 520.1ms)
+
+
+Started GET "/modeler" for 127.0.0.1 at 2015-04-15 23:30:15 -0500
+Processing by ModelerController#index as HTML
+  Rendered modeler/_table.html.erb (0.6ms)
+  Rendered modeler/index.html.erb within layouts/modeler (4.8ms)
+Completed 200 OK in 457ms (Views: 448.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/modeler.css?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/angular-dragdrop.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/joint.css?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/angular/controllers/modelerController.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/angular/sevices/modelerService.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:16 -0500
+
+
+Started GET "/assets/angular/directives/ModelerDirectives.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+
+
+Started GET "/assets/joint/joint.clean.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+
+
+Started GET "/assets/joint/joint.shapes.erd.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+
+
+Started GET "/assets/joint/joint.shapes.uml.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+
+
+Started GET "/assets/schema.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+
+
+Started GET "/api/v1/tables" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+
+
+Started GET "/api/v1/diagrams" for 127.0.0.1 at 2015-04-15 23:30:17 -0500
+Processing by Api::V1::TablesController#index as HTML
+Processing by Api::V1::DiagramsController#index as HTML
+  [1m[36mTable Load (106.5ms)[0m  [1mSELECT `tables`.* FROM `tables`[0m
+  [1m[35mColumn Load (4.7ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[35mCompany Load (51.4ms)[0m  SELECT  `companies`.* FROM `companies` WHERE `companies`.`id` = 1 LIMIT 1
+Completed 200 OK in 127ms (Views: 0.2ms | ActiveRecord: 111.3ms)
+  [1m[36mDiagram Load (137.0ms)[0m  [1mSELECT `diagrams`.* FROM `diagrams` WHERE `diagrams`.`company_id` = 1[0m
+  [1m[35mDiagramTable Load (3.3ms)[0m  SELECT `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` IN (1)
+  [1m[36mTable Load (60.4ms)[0m  [1mSELECT `tables`.* FROM `tables` WHERE `tables`.`id` IN (1, 2)[0m
+  [1m[35mColumn Load (85.8ms)[0m  SELECT `columns`.* FROM `columns` WHERE `columns`.`table_id` IN (1, 2)
+  [1m[36mRelationship Load (4.9ms)[0m  [1mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`parent_table_id` IN (1, 2)[0m
+  [1m[35mRelationship Load (4.1ms)[0m  SELECT `relationships`.* FROM `relationships` WHERE `relationships`.`child_table_id` IN (1, 2)
+  [1m[36mDiagramTable Load (8.4ms)[0m  [1mSELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 1 LIMIT 1[0m
+  [1m[35mDiagramTable Load (7.3ms)[0m  SELECT  `diagram_tables`.* FROM `diagram_tables` WHERE `diagram_tables`.`diagram_id` = 1 AND `diagram_tables`.`table_id` = 2 LIMIT 1
+Completed 200 OK in 792ms (Views: 46.8ms | ActiveRecord: 362.5ms)

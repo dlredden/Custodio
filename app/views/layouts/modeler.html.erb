@@ -5,7 +5,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
 		<link href="https://netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/css/bootstrap<%= do_not_minify_development %>.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link href="//ajax.googleapis.com/ajax/libs/jqueryui/<%= jqueryui_version %>/themes/smoothness/jquery-ui<%= do_not_minify_development %>.css" rel="stylesheet" /> -->
 		<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 		<%= csrf_meta_tags %>
 	</head>
@@ -26,7 +25,7 @@
 
 		<div id="footer">
 			<div class="container">
-				&#0169; 2014 Wikid Labs, LLC
+				&#0169; 2015 Wikid Labs, LLC
 			</div>
 		</div>
 
@@ -35,7 +34,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/<%= jqueryui_version %>/jquery-ui<%= do_not_minify_development %>.js"></script>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/js/bootstrap<%= do_not_minify_development %>.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/<%= angular_version %>/angular<%= do_not_minify_development %>.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/<%= underscore_version %>/underscore<%= do_not_minify_development("-") %>.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/<%= underscore_version %>/underscore<%= do_not_minify_development('-') %>.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/<%= loadash_version %>/lodash<%= do_not_minify_development %>.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/<%= backbone_version %>/backbone<%= do_not_minify_development('-') %>.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/restangular/<%= restangular_version %>/restangular<%= do_not_minify_development %>.js"></script>
 		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	</body>
