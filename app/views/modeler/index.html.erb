@@ -1,28 +1,33 @@
 <!-- app/views/modeler/index.html.erb -->
-<ul class="nav nav-tabs">
+<ul id="nav" class="nav nav-tabs">
 	<li ng-class="{active: diagram.active}" ng-repeat="diagram in diagrams">
 		<a href="#{{contentBaseId}}-{{$index}}" ng-click="changeActiveDiagram($index)">{{ diagram.name }}</a>
 	</li>
 </ul>
 
 <div class="tab-content">
-	<div class="tab-pane"
-		ng-class="{active: diagram.active}"
-		id="diagram-{{$index}}"
-		ng-repeat="diagram in diagrams"
-		style="height: 500px; width: 800px;"
-		data-drop="true"
-		jqyoui-droppable="{multiple: true, onDrop: 'dropCallback', onOver: 'overCallback', onOut: 'outCallback'}"
-		data-jqyoui-options="{hoverClass: 'hoverClass'}">
-		<div
-			ng-repeat="table in diagram.tables" ng-model="table"
-			ng-style="{'top':table.diagram_settings.top_position+'px', 'left':table.diagram_settings.left_position+'px'}"
-			class="panel panel-default modeler-table"
-			ng-model="table"
-			data-drag="true" jqyoui-draggable="{animate: true, onStart: 'startCallback', onStop: 'stopCallback', onDrag: 'dragCallback'}"
-			data-jqyoui-options="{snap: true, cursor: 'move', revert: 'invalid'}">
-			<%= render :partial => "table", locals: {table: "{{ table }}"} %>
-		</div>
+	<div
+        resizable
+        class="tab-pane"
+        id="diagram-{{$index}}"
+        ng-style="{'height': windowHeight, 'overflow': 'hidden'}"
+        ng-class="{active: diagram.active}"
+        ng-repeat="diagram in diagrams">
+        <div
+            id="canvas-{{$index}}"
+            style="width: 2000px; height: 1000px"
+            jqyoui-draggable="{onStart: 'startCanvasCallback', onStop: 'stopCanvasCallback', onDrag: 'dragCanvasCallback'}"
+            data-jqyoui-options="{hoverClass: 'hoverClass'}">
+            <div
+                ng-repeat="table in diagram.tables" ng-model="table"
+                ng-style="{'top':table.diagram_settings.top_position+'px', 'left':table.diagram_settings.left_position+'px'}"
+                class="panel panel-default modeler-table"
+                ng-model="table"
+                data-drag="true"
+                jqyoui-draggable="{onStart: 'startItemCallback', onStop: 'stopItemCallback', onDrag: 'dragItemCallback'}"
+                data-jqyoui-options="{snap: true, cursor: 'move', containment: 'parent'}">
+                <%= render :partial => "table", locals: {table: "{{ table }}"} %>
+            </div>
+        </div>
 	</div>
 </div>
-

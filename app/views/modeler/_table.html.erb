@@ -1,8 +1,25 @@
 <div class="panel-heading">
 	<h3 class="panel-title">{{ table.name }}</h3>
 </div>
-<div class="panel-body">
-	<div ng-repeat="column in table.columns">
-		{{ column.name }}
-	</div>
-</div>
+<table class="table">
+    <tr>
+        <th>PK</th>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Null</th>
+        <th>Auto Increment</th>
+        <th>Default</th>
+    </tr>
+	<tr ng-repeat="column in table.columns" ng-class="{key: column.is_primary_key}">
+		<td>
+            <% if "{{column.is_primary_key}}" == "true" %>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <% end %>
+        </td>
+        <td>{{column.name}}</td>
+        <td>{{column.data_type}}</td>
+		<td>{{column.is_nullable}}</td>
+        <td>{{column.is_auto_increment}}</td>
+        <td>{{column.default_value}}</td>
+	</tr>
+</table>

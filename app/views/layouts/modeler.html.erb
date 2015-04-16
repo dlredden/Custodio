@@ -11,16 +11,15 @@
 	</head>
 
 	<body ng-app="modelerApp" class="ng-cloak">
-		<div id="wrap">
+		<div id="wrapper">
 			<div id="header">
 				<div class="container">
-					<h1 style="font-family: 'Mr Dafoe', cursive; font-size: 3.5em;">
-						Custodio <span style="font-family: Veranda; font-size: .7em;">Modeler</span>
+					<h1 style="font-family: 'Mr Dafoe', cursive; font-size: 3.5em;">Custodio <span style="font-family: Veranda; font-size: .7em;">Modeler</span>
 					</h1>
 				</div>
 			</div>
 
-			<div class="container modeler-canvas" ng-controller="modelerController">
+			<div id="content" class="container" ng-controller="modelerController">
 				<%= yield %>
 			</div>
 		</div>

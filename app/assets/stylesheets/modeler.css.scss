@@ -18,27 +18,26 @@ $text-color-light: #FFFFFF;
 html,
 body {
   height: 100%;
+  margin:0;
+  padding:0;
   background-color: $background-color;
   font-family: $font-family;
   color: $text-color;
-  /* The html and body elements cannot have any padding or margin. */
+}
+
+#wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  //!important;
+  height: auto !important;  
+  margin: 0 auto (-1 * $footer-height);
 }
 
 #header {
 	background-color: $header-color;
 	min-height: $header-height;
 	color: $text-color-light;
-}
-
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto (-1 * $footer-height);
-  /* Pad bottom by footer height */
-  padding: 0 0 $footer-height;
 }
 
 /* Set the fixed height of the footer here */
@@ -48,17 +47,15 @@ body {
   color: $text-color-light;
 }
 
-.modeler-canvas {
-	min-height: 500px;
-	border: solid;
-	border-width: 2px;
+#content {
   position: relative;
+  overflow: hidden;
 }
 
 .modeler-table {
 	position: absolute;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   padding: 2px;
   margin: 5px;
   transition: none;
@@ -70,4 +67,8 @@ body {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+}
+
+.key {
+  background-color: $background-color;
 }
